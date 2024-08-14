@@ -1,6 +1,6 @@
-const element = document.getElementsByClassName("boton")[0];
-element.addEventListener("click", myFunction);
+const div = document.getElementById("boton");
 
-function myFunction() {
+div.addEventListener("click", function() {
     alert("Hola! Soy el div");
-}
+});
+
