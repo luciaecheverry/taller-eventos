@@ -1,13 +1,12 @@
 const div = document.getElementById("boton");
-const boton =  document.getElementById("botonSaludar");
+const botonSaludar =  document.getElementById("botonSaludar");
 
-// Manejador del evento click para el div
-div.addEventListener("click", () => {
+
+div.addEventListener("click", function() {
     alert("Hola! Soy el div");
 });
 
-// Manejador del evento click para el botón
-botonSaludar.addEventListener("click", (event) => {
+botonSaludar.addEventListener("click", function(event){
     alert("¡Hola!");
-    event.stopPropagation(); // Evita que el clic en el botón dispare el evento del div
+    event.stopPropagation(); // Evita que el botón dispare el evento del div
 });
